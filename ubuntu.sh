@@ -1,10 +1,5 @@
 #!/bin/bash
 
-if ! ps -p $$ | grep -i bash; then
-       echo "Sorry, this script requires bash."
-       exit 1
-fi
-
 if ! [ -x "$(which systemctl)" ]
   then
     echo "systemctl required. Exiting."
